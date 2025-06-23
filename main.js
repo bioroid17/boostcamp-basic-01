@@ -51,6 +51,7 @@ function nextPosition(current, dice) {
 }
 
 // 사다리 테스트
+console.log("=== Ladder Test ===");
 let start = 1;
 let next = 1;
 let dice = 3;
@@ -88,6 +89,7 @@ next = start + nextPosition(start, dice);
 console.log("from=", start, ", dice=", dice, ", next=", next);
 
 // 뱀 테스트
+console.log("=== Snake Test ===");
 start = 91;
 dice = 6;
 next = start + nextPosition(start, dice);
@@ -122,3 +124,17 @@ start = 31;
 dice = 1;
 next = start + nextPosition(start, dice);
 console.log("from=", start, ", dice=", dice, ", next=", next);
+
+// 무작위 테스트
+console.log("=== Random Test ===");
+next = 1;
+while (next < 100) {
+  start = next;
+  dice = parseInt(Math.random() * 6) + 1; // 1부터 6까지의 무작위 주사위 눈
+  next = start + nextPosition(start, dice);
+  if (next > 100) {
+    next = 100;
+  }
+  console.log("from=", start, ", dice=", dice, ", next=", next);
+}
+console.log("Game Set! You reached 100.");
