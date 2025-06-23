@@ -50,28 +50,75 @@ function nextPosition(current, dice) {
   return dice;
 }
 
+// 사다리 테스트
 let start = 1;
 let next = 1;
 let dice = 3;
 next = start + nextPosition(start, dice);
 console.log("from=", start, ", dice=", dice, ", next=", next);
 
-start = next;
-dice = 4;
-next = start + nextPosition(start, dice);
-console.log("from=", start, ", dice=", dice, ", next=", next);
-
-start = next;
+start = 5;
 dice = 3;
 next = start + nextPosition(start, dice);
 console.log("from=", start, ", dice=", dice, ", next=", next);
 
-start = next;
+start = 18;
+dice = 3;
+next = start + nextPosition(start, dice);
+console.log("from=", start, ", dice=", dice, ", next=", next);
+
+start = 23;
 dice = 5;
 next = start + nextPosition(start, dice);
 console.log("from=", start, ", dice=", dice, ", next=", next);
 
-start = next;
+start = 49;
+dice = 1;
+next = start + nextPosition(start, dice);
+console.log("from=", start, ", dice=", dice, ", next=", next);
+
+start = 69;
+dice = 2;
+next = start + nextPosition(start, dice);
+console.log("from=", start, ", dice=", dice, ", next=", next);
+
+start = 74;
+dice = 6;
+next = start + nextPosition(start, dice);
+console.log("from=", start, ", dice=", dice, ", next=", next);
+
+// 뱀 테스트
+start = 91;
+dice = 6;
+next = start + nextPosition(start, dice);
+console.log("from=", start, ", dice=", dice, ", next=", next);
+
+start = 91;
+dice = 4;
+next = start + nextPosition(start, dice);
+console.log("from=", start, ", dice=", dice, ", next=", next);
+
+start = 85;
+dice = 3;
+next = start + nextPosition(start, dice);
+console.log("from=", start, ", dice=", dice, ", next=", next);
+
+start = 57;
+dice = 5;
+next = start + nextPosition(start, dice);
+console.log("from=", start, ", dice=", dice, ", next=", next);
+
+start = 47;
+dice = 1;
+next = start + nextPosition(start, dice);
+console.log("from=", start, ", dice=", dice, ", next=", next);
+
+start = 33;
+dice = 3;
+next = start + nextPosition(start, dice);
+console.log("from=", start, ", dice=", dice, ", next=", next);
+
+start = 31;
 dice = 1;
 next = start + nextPosition(start, dice);
 console.log("from=", start, ", dice=", dice, ", next=", next);
